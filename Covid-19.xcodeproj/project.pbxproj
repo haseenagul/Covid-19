@@ -13,6 +13,10 @@
 		17F7EA88251F5AB400C2F547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F7EA86251F5AB400C2F547 /* Main.storyboard */; };
 		17F7EA8A251F5ABD00C2F547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F7EA89251F5ABD00C2F547 /* Assets.xcassets */; };
 		17F7EA8D251F5ABD00C2F547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F7EA8B251F5ABD00C2F547 /* LaunchScreen.storyboard */; };
+		17F7EA98251F5C0600C2F547 /* StatisticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7EA97251F5C0600C2F547 /* StatisticsManager.swift */; };
+		17F7EAA025233CF200C2F547 /* StatisticsCovidData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7EA9F25233CF200C2F547 /* StatisticsCovidData.swift */; };
+		17F7EAA22523A6AC00C2F547 /* lightMode.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17F7EAA12523A6AC00C2F547 /* lightMode.pdf */; };
+		17F7EAA42523BDC600C2F547 /* darkMode.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17F7EAA32523BDC600C2F547 /* darkMode.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		17F7EA89251F5ABD00C2F547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17F7EA8C251F5ABD00C2F547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17F7EA8E251F5ABD00C2F547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F7EA97251F5C0600C2F547 /* StatisticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsManager.swift; sourceTree = "<group>"; };
+		17F7EA9F25233CF200C2F547 /* StatisticsCovidData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsCovidData.swift; sourceTree = "<group>"; };
+		17F7EAA12523A6AC00C2F547 /* lightMode.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lightMode.pdf; sourceTree = "<group>"; };
+		17F7EAA32523BDC600C2F547 /* darkMode.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = darkMode.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		17F7EA7F251F5AB400C2F547 /* Covid-19 */ = {
 			isa = PBXGroup;
 			children = (
+				17F7EA94251F5BAC00C2F547 /* Model */,
 				17F7EA80251F5AB400C2F547 /* AppDelegate.swift */,
 				17F7EA82251F5AB400C2F547 /* SceneDelegate.swift */,
-				17F7EA84251F5AB400C2F547 /* ViewController.swift */,
-				17F7EA86251F5AB400C2F547 /* Main.storyboard */,
+				17F7EA96251F5BCC00C2F547 /* Controller */,
+				17F7EA95251F5BBC00C2F547 /* View */,
 				17F7EA89251F5ABD00C2F547 /* Assets.xcassets */,
+				17F7EAA12523A6AC00C2F547 /* lightMode.pdf */,
+				17F7EAA32523BDC600C2F547 /* darkMode.pdf */,
 				17F7EA8B251F5ABD00C2F547 /* LaunchScreen.storyboard */,
 				17F7EA8E251F5ABD00C2F547 /* Info.plist */,
 			);
 			path = "Covid-19";
+			sourceTree = "<group>";
+		};
+		17F7EA94251F5BAC00C2F547 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17F7EA97251F5C0600C2F547 /* StatisticsManager.swift */,
+				17F7EA9F25233CF200C2F547 /* StatisticsCovidData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17F7EA95251F5BBC00C2F547 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17F7EA86251F5AB400C2F547 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17F7EA96251F5BCC00C2F547 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17F7EA84251F5AB400C2F547 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				17F7EA8D251F5ABD00C2F547 /* LaunchScreen.storyboard in Resources */,
+				17F7EAA42523BDC600C2F547 /* darkMode.pdf in Resources */,
 				17F7EA8A251F5ABD00C2F547 /* Assets.xcassets in Resources */,
+				17F7EAA22523A6AC00C2F547 /* lightMode.pdf in Resources */,
 				17F7EA88251F5AB400C2F547 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F7EA98251F5C0600C2F547 /* StatisticsManager.swift in Sources */,
 				17F7EA85251F5AB400C2F547 /* ViewController.swift in Sources */,
 				17F7EA81251F5AB400C2F547 /* AppDelegate.swift in Sources */,
+				17F7EAA025233CF200C2F547 /* StatisticsCovidData.swift in Sources */,
 				17F7EA83251F5AB400C2F547 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
